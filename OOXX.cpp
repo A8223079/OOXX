@@ -32,3 +32,53 @@ void OOXX::GameChart()
 	}
 
 }
+void OOXX::ChooseCoordinateO()
+{
+    while (true)
+    {
+        while (true)
+        {
+            cin >> PlayerInput;
+            cout << "--------------" << endl;
+            if (PlayerInput == 0)
+            {
+                cout << "The chart has been restarted!" << endl
+                     << "--------------" << endl;
+                ChartNumber[0] = "1";
+                ChartNumber[1] = "2";
+                ChartNumber[2] = "3";
+                ChartNumber[3] = "4";
+                ChartNumber[4] = "5";
+                ChartNumber[5] = "6";
+                ChartNumber[6] = "7";
+                ChartNumber[7] = "8";
+                ChartNumber[8] = "9";
+                round = 1;
+                break;
+            }
+            if (PlayerInput >= 10 || PlayerInput <= 0)
+            {
+                cout << "沒有此位置，重新輸入:" << endl;
+            }
+            else if (ChartNumber[PlayerInput - 1] == "O" || ChartNumber[PlayerInput - 1] == "X")
+            {
+                cout << "此位置已被輸入，重新輸入:" << endl;
+            }
+            else if (round % 2 == 1)
+            {
+                ChartNumber[PlayerInput - 1] = "O";
+                round++;
+                break;
+            }
+            else if (round % 2 != 1)
+            {
+                ChartNumber[PlayerInput - 1] = "X";
+                round++;
+                break;
+            }
+        }
+        GameChart();
+        cout << "--------------" << endl;
+        Victory();
+    }
+}
