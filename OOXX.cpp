@@ -82,3 +82,140 @@ void OOXX::ChooseCoordinateO()
         Victory();
     }
 }
+void OOXX::Victory()
+{
+	/*
+	1: 123 147 159
+	2: 258
+	3: 357 369
+	4: 456
+	7: 789
+	*/
+	if (ChartNumber[0] ==  ChartNumber[1] and ChartNumber[1] == ChartNumber[2]) //123
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[0] == ChartNumber[3] and ChartNumber[3] == ChartNumber[6]) //147
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[0] == ChartNumber[4] and ChartNumber[4] == ChartNumber[8]) //159
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[1] == ChartNumber[4] and ChartNumber[4] == ChartNumber[7]) //258
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[2] == ChartNumber[4] and ChartNumber[4] == ChartNumber[6]) //357
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[2] == ChartNumber[5] and ChartNumber[5] == ChartNumber[8]) //369
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[3] == ChartNumber[4] and ChartNumber[4] == ChartNumber[5]) //456
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+	}
+	if (ChartNumber[6] == ChartNumber[7] and ChartNumber[7] == ChartNumber[8]) //789
+	{
+		if (round % 2 == 0)
+		{
+			cout << "O is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		else if (round % 2 == 1)
+		{
+			cout << "X is winner! Chart has been restarted!" << endl << "--------------" << endl;
+			ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+			round = 1;
+		}
+		
+	}
+	if (round == 10)
+	{
+		cout << "Draw! No one get win! Chart has been restarted!" << endl << "--------------" << endl;
+		ChartNumber[0] = "1"; ChartNumber[1] = "2"; ChartNumber[2] = "3"; ChartNumber[3] = "4"; ChartNumber[4] = "5"; ChartNumber[5] = "6"; ChartNumber[6] = "7"; ChartNumber[7] = "8"; ChartNumber[8] = "9";
+		round = 1;
+	}
+}
